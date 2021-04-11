@@ -1,0 +1,24 @@
+version: '2'
+services:
+  webserverphp8:
+    build: ./
+    container_name: webserver_php8_container
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - ~/projects:/var/www
+      - /etc/localtime:/etc/localtime
+      - ../storage/config/sites:/etc/apache2/sites-available
+      - ../storage/config/sites:/etc/apache2/sites-enabled
+      - ../storage/config/php.ini:/usr/local/etc/php/php.ini
+      - ../storage/config/hosts:/etc/hosts
+      - ../storage/volumes/apache:/var/log/apache2
+    networks:
+      - projectnetwork
+    tty: true
+    privileged: true
+networks:
+  projectnetwork:
+    external: true
