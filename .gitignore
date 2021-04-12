@@ -21,6 +21,7 @@ public_html/hot
 
 storage/*.key
 /.idea
+composer.phar
 .env
 Homestead.yaml
 Homestead.json
