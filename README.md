@@ -16,8 +16,8 @@ Install and initialization steps:
     
     }
 
-5. Execute: composer install
-6. Execute: chmod -R 777 storage/framework
-4. Execute: php artisan key:generate --ansi
+4. Execute: composer install
+5. Execute: chmod -R 777 storage/framework
+6. Execute: php artisan key:generate --ansi
 7. Go to the web browser and type "my-laravel-ddd-skeleton.com"
 
