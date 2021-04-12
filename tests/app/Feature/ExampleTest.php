@@ -24,8 +24,6 @@ class ExampleTest extends TestCase
             'description' => $description
         ]);
 
-        dd($response->content());
-
         $response->assertStatus(200);
         $response->assertJsonFragment([
             'title' => $title,
