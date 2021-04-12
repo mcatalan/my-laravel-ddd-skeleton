@@ -71,7 +71,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://github.com/mcatalan-85/my-laravel-ddd-skeleton">GitHub</a>
+                    <a href="https://github.com/mcatalan/my-laravel-ddd-skeleton">GitHub</a>
                 </div>
             </div>
         </div>
